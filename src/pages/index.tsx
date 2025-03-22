@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { NextSeo } from 'next-seo'
-import { Button, Badge, useToast, Box, Text } from '@chakra-ui/react'
+import { Button, Badge, useToast, Box, Heading, Text } from '@chakra-ui/react'
 import { useState, useEffect } from 'react'
 import { useWeb3ModalProvider, useWeb3ModalAccount } from '@web3modal/ethers/react'
 import { LinkComponent } from '../components/layout/LinkComponent'
@@ -227,10 +227,10 @@ export default function Home() {
 
   return (
     <>
-      <Head title="Gov" description={SITE_DESCRIPTION} />
+      <Head title="Aqua DAO" description={SITE_DESCRIPTION} />
       <NextSeo
-        title="Gov"
-        description="DAOs for everyday people"
+        title="Aqua DAO Governor website"
+        description="DAOs for Aqua"
         titleTemplate={`%s`}
         // description={SITE_DESCRIPTION}
         // defaultOpenGraphImageWidth={1200}
@@ -262,13 +262,14 @@ export default function Home() {
 
         <br />
         <HeadingComponent as="h3">{name}</HeadingComponent>
-        <Text> “Fluid Finance for a Frictionless Future.”</Text>
+        <Heading>Fluid Finance for a Frictionless Future.</Heading>
         <br />
         <Text>
-          📜 I. Statement of Purpose We, the AquaDEX community, believe the future of decentralized finance must flow like water: adaptable,
-          transparent, and free from centralized dams. AquaDEX exists to pioneer a liquidity-first, permissionless trading layer that is governed by
-          its community and evolves through open contribution. Aqua is not a protocol. It is a movement. We are building a unified ecosystem where
-          liquidity, governance, innovation, and community co-exist in perfect flow.{' '}
+          📜 I. Statement of Purpose <br />
+          We, the AquaDAO community, believe the future of decentralized finance must flow like water: adaptable, transparent, and free from
+          centralized dams. AquaDAO exists to pioneer a liquidity-first, permissionless trading layer that is governed by its community and evolves
+          through open contribution. AquaDAO is not a protocol. It is a movement. We are building a unified ecosystem where liquidity, governance,
+          innovation, and community co-exist in perfect flow.
         </Text>
         <br />
         <Text>

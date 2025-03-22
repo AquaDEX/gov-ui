@@ -1,6 +1,7 @@
 import type { AppProps } from 'next/app'
-import Layout from '../components/layout'
 import { ChakraProvider } from '@chakra-ui/react'
+
+import Layout from '../components/layout'
 import { Seo } from '../components/layout/Seo'
 import { useIsMounted } from '../hooks/useIsMounted'
 
