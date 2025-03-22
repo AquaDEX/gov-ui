@@ -251,23 +251,24 @@ export default function Home() {
       />
       <main>
         <Box borderRadius="lg" overflow="hidden">
-          <Image priority width="2000" height="2000" alt="dao-image" src="/huangshan.png" />
+          <Image
+            priority
+            width="1000"
+            height="200"
+            alt="dao-image"
+            src="https://bronze-fascinating-guanaco-829.mypinata.cloud/ipfs/bafybeibyokvtvi2k2jftvkkc3tipldtq2ros2e47c5f4boi3zkz6ltn6ce?pinataGatewayToken=kOVtU4LNJHYr1v87kBNeUeZWg6B5eFoM_y1kE1WgjF97NhrDi2fXTecq6GiE1m97"
+          />
         </Box>
-        <Text fontSize={9}>
-          <i>
-            Photo:{' '}
-            <LinkComponent href="https://unsplash.com/photos/a-view-of-a-mountain-range-from-the-top-of-a-hill-pZDcvou8bRw">
-              Ruslan Kaptsan
-            </LinkComponent>
-          </i>
-        </Text>
+
         <br />
         <HeadingComponent as="h3">{name}</HeadingComponent>
-        <Text>The purpose of this DAO is to test Gov. </Text>
+        <Text> “Fluid Finance for a Frictionless Future.”</Text>
         <br />
         <Text>
-          Using Gov, adding a new member typically requires a community vote, but in this version you can become a member to try out features like
-          submitting a proposal, delegating your voting power to someone, and voting.
+          📜 I. Statement of Purpose We, the AquaDEX community, believe the future of decentralized finance must flow like water: adaptable,
+          transparent, and free from centralized dams. AquaDEX exists to pioneer a liquidity-first, permissionless trading layer that is governed by
+          its community and evolves through open contribution. Aqua is not a protocol. It is a movement. We are building a unified ecosystem where
+          liquidity, governance, innovation, and community co-exist in perfect flow.{' '}
         </Text>
         <br />
         <Text>
@@ -286,7 +287,7 @@ export default function Home() {
               style={{ color: '#45a2f8' }}
               target="_blank"
               rel="noopener noreferrer"
-              href={'https://sepolia.etherscan.io/address/' + govContract.address + '#code'}>
+              href={'https://explorer.waterfall.network/address/' + govContract.address + '#code'}>
               {govContract.address}
             </a>
           </strong>

@@ -1,7 +1,7 @@
 import { ThemingProps } from '@chakra-ui/react'
-export const SITE_DESCRIPTION = 'DAOs for everyday people.'
+export const SITE_DESCRIPTION = 'Aqua DAO'
 export const SITE_NAME = 'Gov'
-export const SITE_URL = 'https://gov-ui.netlify.app/'
+export const SITE_URL = 'https://aquadex.co/dao'
 
 export const THEME_INITIAL_COLOR = 'system'
 export const THEME_COLOR_SCHEME: ThemingProps['colorScheme'] = 'blue'

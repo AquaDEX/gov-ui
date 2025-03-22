@@ -7,7 +7,7 @@ interface Props {
 }
 
 const projectId = process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID || ''
-const endpoint = process.env.NEXT_PUBLIC_RPC_ENDPOINT_URL || 'https://sepolia.gateway.tenderly.co'
+const endpoint = process.env.NEXT_PUBLIC_RPC_ENDPOINT_URL || 'https://rpc.waterfall.network'
 
 const sepolia = {
   chainId: 11155111,
@@ -15,6 +15,15 @@ const sepolia = {
   chainName: 'sepolia',
   currency: 'ETH',
   explorerUrl: 'https://sepolia.etherscan.io',
+  rpcUrl: endpoint,
+}
+
+const waterfall = {
+  chainId: 181,
+  name: 'Waterfall',
+  chainName: 'Waterfall',
+  currency: 'WATER',
+  explorerUrl: 'https://explorer.waterfall.network',
   rpcUrl: endpoint,
 }
 
@@ -28,21 +37,21 @@ const sepolia = {
 // }
 
 const metadata = {
-  name: 'Gov',
-  description: 'DAOs for everyday people',
-  url: 'https://gov-ui.netlify.app',
+  name: 'Aqua DAO',
+  description: 'DAOs for aqua people',
+  url: 'https://aquadex.co/dao',
   icons: ['./public/favicon.ico'],
 }
 
 const ethersConfig = defaultConfig({
   metadata,
   enableEmail: true,
-  defaultChainId: 11155111,
+  defaultChainId: 181,
 })
 
 createWeb3Modal({
   ethersConfig,
-  chains: [sepolia],
+  chains: [waterfall],
   projectId,
   // enableAnalytics: true,
   // enableOnramp: true,
