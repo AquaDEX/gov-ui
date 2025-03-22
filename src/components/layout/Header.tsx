@@ -27,40 +27,26 @@ export function Header(props: Props) {
             <MenuItem fontSize="xl">Home</MenuItem>
           </LinkComponent>
           <LinkComponent href="/profile">
-            <MenuItem fontSize="xl" icon={<LuUserPlus />}>
-              User profile
-            </MenuItem>
+            <MenuItem fontSize="xl">User profile</MenuItem>
           </LinkComponent>
 
           <LinkComponent href="/delegate">
-            <MenuItem fontSize="xl" icon={<GrValidate />}>
-              Delegate
-            </MenuItem>
+            <MenuItem fontSize="xl">Delegate</MenuItem>
           </LinkComponent>
           <LinkComponent href="/request-eth">
-            <MenuItem fontSize="xl" icon={<FaEthereum />}>
-              Request ETH
-            </MenuItem>
+            <MenuItem fontSize="xl">Request ETH</MenuItem>
           </LinkComponent>
           <LinkComponent href="/request-eur">
-            <MenuItem fontSize="xl" icon={<FaEuroSign />}>
-              Request EUR
-            </MenuItem>
+            <MenuItem fontSize="xl">Request EUR</MenuItem>
           </LinkComponent>
           <LinkComponent href="/manifesto">
-            <MenuItem fontSize="xl" icon={<FaFeather />}>
-              Edit manifesto
-            </MenuItem>
+            <MenuItem fontSize="xl">Edit manifesto</MenuItem>
           </LinkComponent>
           <LinkComponent href="/add-member">
-            <MenuItem fontSize="xl" icon={<IoEnterOutline />}>
-              Add a member
-            </MenuItem>
+            <MenuItem fontSize="xl">Add a member</MenuItem>
           </LinkComponent>
           <LinkComponent href="/ban-member">
-            <MenuItem fontSize="xl" icon={<IoExitOutline />}>
-              Ban a member
-            </MenuItem>
+            <MenuItem fontSize="xl">Ban a member</MenuItem>
           </LinkComponent>
         </MenuList>
       </Menu>
