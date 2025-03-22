@@ -24,9 +24,7 @@ export function Header(props: Props) {
         <MenuButton as={IconButton} aria-label="Options" icon={<HamburgerIcon />} variant="outline" />
         <MenuList>
           <LinkComponent href="/">
-            <MenuItem fontSize="xl" icon={<FaHome />}>
-              Home
-            </MenuItem>
+            <MenuItem fontSize="xl">Home</MenuItem>
           </LinkComponent>
           <LinkComponent href="/profile">
             <MenuItem fontSize="xl" icon={<LuUserPlus />}>
