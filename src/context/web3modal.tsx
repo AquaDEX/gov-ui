@@ -6,7 +6,7 @@ interface Props {
   children?: ReactNode
 }
 
-const projectId = process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID || ''
+const projectId = process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID || 'c64e66d1fdca9e3e33dff34571815739'
 const endpoint = process.env.NEXT_PUBLIC_RPC_ENDPOINT_URL || 'https://rpc.waterfall.network'
 
 const sepolia = {
